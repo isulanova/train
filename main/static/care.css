@@ -1,0 +1,28 @@
+.picture {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 89%;
+    flex: 0 0 89%;
+    max-width: 89%;
+    vertical-align: middle;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+}
+
+
+.description {
+    padding: 5% 5%;
+}
+
+
+.col {
+    max-width: 100%;
+}
+
+h1 {
+    margin-left: 3%;
+}

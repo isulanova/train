@@ -1,0 +1,25 @@
+{% extends "main\base.html" %}
+{% load static %}
+
+{% block css %}
+<link href={% static "illness.css" %} rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <h1>Все собаки</h1>
+    <div class="row">
+    {% for dog in dogs %}
+    <div class="col-lg-4 col-md-6 p-4">
+        <div class="card border-primary rounded custom-shadow">
+            {% if dog.main_img %}
+                <img src="{{ dog.main_img }}" class="card-img-top" alt="...">
+            {% endif %}
+            <div class="card-body">
+                <p class="card-title">{{ dog.breed }}</p>
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+</div>
+{% endblock %}

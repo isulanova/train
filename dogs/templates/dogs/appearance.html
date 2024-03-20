@@ -1,0 +1,47 @@
+{% extends "main\base.html" %}
+{% load static %}
+
+{% block css %}
+<link href={% static "appearance.css" %} rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+    <div class="row featurette">
+        <div class="col-md-pic">
+            <img class="featurette-image img-fluid mx-auto" src="{{ dog.main_img }}" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-header">
+            <h1 class="featurette-heading">{{ dog.breed }}</h1>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="rounded-0" src="{{ dog.img_1 }}" alt="Generic placeholder image" width="300" height="300">
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="rounded-0" src="{{ dog.img_2 }}" alt="Generic placeholder image" width="300" height="300">
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="rounded-0" src="{{ dog.img_3 }}" alt="Generic placeholder image" width="300" height="300">
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    </div>
+
+    <h1>Внешний вид</h1>
+
+    <div class="description">
+            <p class="lead">{{ dog.appearance }}</p>
+            {% comment %} {% for head, text, blank in dog.display_info %}
+                <h3>head</h3>
+                <p class="lead">text</p>
+                <p class="lead">blank</p>
+            {% endfor %} {% endcomment %}
+    </div>
+{% endblock %}

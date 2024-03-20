@@ -1,0 +1,23 @@
+{% extends "main\base.html" %}
+{% load static %}
+
+{% block css %}
+<link href={% static "illness.css" %} rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <hr class="featurette-divider">
+    <h1>
+     Здоровье и возможные болезни
+    </h1>
+    <hr class="featurette-divider">
+ 
+    <div class="row featurette">
+      <div class="col-md-7">
+        <p class="lead">{{ dog.illness }}</p>
+       </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-fluid mx-auto" src="{{ dog.ill_img }}" alt="Generic placeholder image">
+      </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,76 @@
+{% extends "main\base.html" %}
+{% load static %}
+
+{% block css %}
+<link href={% static "appearance.css" %} rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+    <div class="row featurette">
+        <div class="col-md-pic">
+            <img class="featurette-image img-fluid mx-auto" src="images\jackrassel.jpg" alt="Generic placeholder image">
+        </div>
+        <div class="col-md-header">
+            <h1 class="featurette-heading">Джек рассел терьер</h1>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="rounded-0" src="images\jr1.jpg" alt="Generic placeholder image" width="300" height="300">
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="rounded-0" src="images\jr2.jpg" alt="Generic placeholder image" width="300" height="300">
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img class="rounded-0" src="images\jr3.jpg" alt="Generic placeholder image" width="300" height="300">
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    </div>
+
+    <h1>Внешний вид</h1>
+
+    <div class="description">
+        <div class="col-md-7">
+            <p class="lead">Джек-рассел-терьер – небольшая, но крепко сложенная собака. Рост в холке составляет 25-30
+                см.
+                Строгих нормативов по весу не закреплено, однако специалисты отмечают, что гармонично выглядит
+                джек-рассел-терьер, у которого на каждые 5 см роста приходится 1 кг веса, то есть желательная масса
+                взрослого
+                представителя этой породы – 5-6 кг.</p>
+            <h3>Тело</h3>
+            <p class="lead">Силуэт джек-рассел-терьера строго прямоугольный, вытянутый (длина от холки до основания
+                хвоста
+                больше, чем высота в холке).</p>
+            <h3>Голова</h3>
+            <p class="lead">Череп плоский и умеренно широкий. Морда несколько короче черепной коробки. Переход от лба к
+                морде
+                хорошо определен, но выражен не слишком резко.</p>
+            <h3>Нос</h3>
+            <p class="lead">Аккуратный. Мочка черного цвета. Ноздри развитые и хорошо открытые.</p>
+            <h3>Глаза</h3>
+            <p class="lead">Миндалевидной формы, темные. Не выпучены, веки прилегают к глазному яблоку и затемнены по
+                краю.
+            </p>
+            <h3>Уши</h3>
+            <p class="lead">«Кнопки» или висячие. Маленькие, заломлены впереди. Чрезвычайно подвижные, могут
+                поворачиваться на
+                180°. Кончики имеют V-образную форму.</p>
+            <h3>Корпус</h3>
+            <p class="lead">Круп ровный. Поясница короткая, сильная и мускулистая. Спина сильная и достаточно узкая.</p>
+            <h3>Шерсть</h3>
+            <p class="lead">Шерсть у джек-рассел-терьеров может быть трех типов: жесткая, гладкая или с изломом. Должна
+                хорошо
+                защищать от непогоды.</p>
+            <h3>Окрас</h3>
+            <p class="lead">Преобладающий белый фон с темными пятнами. Цвет пятен может варьироваться от черного и
+                темно-каштанового до рыжего.</p>
+        </div>
+    </div>
+{% endblock %}
